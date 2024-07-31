@@ -22,7 +22,7 @@ It is a Python-based web enumeration tool named WebRecon.py. The main objective 
 
 Clone the repository and navigate to the project directory and create a directory called `results` for stor the results:
 ```
- git clone https://github.com/secretguard/web-recon.git
+ git clone https://github.com/SubhaDip003/web-recon.git
 
  cd web-recon
 
