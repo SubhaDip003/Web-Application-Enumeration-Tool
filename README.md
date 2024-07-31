@@ -34,7 +34,8 @@ Install the required Python packages:
 pip install -r requirements.txt
 ```
 
-### NOTE: If you have any error to install the requirement packages in kali Linux or parrotOS (Debian-based Linux) then at first you create a Virtual Environment. Follow the commands to create Virtual Environment and install all dependencies:
+> ### NOTE: 
+> If you have any error to install the requirement packages in kali Linux or parrotOS (Debian-based Linux) then at first you create a Virtual Environment. Follow the commands to create Virtual Environment and install all dependencies:
 ```
 # Create a virtual environment
 python3 -m venv myenv
