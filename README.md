@@ -69,3 +69,17 @@ python3 WebRecon.py -a -d example.com
 python3 WebRecon.py -dir -d example.com
 ```
 
+## To Run DNS Enumeration:
+```
+python3 WebRecon.py -dns -d example.com
+```
+
+## To Run File Enumeration:
+```
+python3 WebRecon.py -file -d example.com
+```
+
+## To Run Subdomain Discovery:
+```
+python3 WebRecon.py -sub -d example.com
+```
