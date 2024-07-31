@@ -1,4 +1,4 @@
-# WebRecon.py - Web Enumeration Tool
+# WebRecon - Web Enumeration Tool
 
 ## Description:
 
