@@ -20,11 +20,52 @@ It is a Python-based web enumeration tool named WebRecon. The main objective is 
 
 ## Installation
 
-Clone the repository and navigate to the project directory and create a directory called `results` for stor the results:
+Clone the repository and navigate to the project directory and create a directory called `results` for store the results:
 ```
- git clone https://github.com/SubhaDip003/web-recon.git
+ git clone https://github.com/SubhaDip003/WebRecon.git
 
- cd web-recon
+ cd WebRecon
 
  mkdir results
 ```
+
+Install the required Python packages:
+```
+pip install -r requirements.txt
+```
+
+## To get help
+
+Run the command:
+```
+python3 WebAppRecon.py -h
+```
+
+## Running the Tool
+
+Execute the `WebRecon.py` script via the command-line interface. You need to provide the domain name of the target website using the `-d` or `--domain` switch. Here are the available options:
+```
+python3 WebRecon.py -d <domain> [options]
+```
+
+### Options:
+
+* `-d`, `--domain`: Specify the domain name (required).
+* `-a`, `--all`: Run all scripts.
+* `-dir`: Run directory enumeration script.
+* `-dns`: Run DNS enumeration script.
+* `-file`: Run file enumeration script.
+* `-sub`: Run subdomain discovery script.
+
+# Examples:
+
+## To Run All Scripts:
+```
+python3 WebRecon.py -a -d example.com
+```
+
+## To Run Directory Enumeration:
+```
+python3 WebRecon.py -dir -d example.com
+```
+
