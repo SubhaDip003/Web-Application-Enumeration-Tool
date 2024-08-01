@@ -99,3 +99,6 @@ python3 WebRecon.py -file -d example.com
 ```
 python3 WebRecon.py -sub -d example.com
 ```
+
+## Show the results:
+To Show the results open the `results` directory, here you can see all results in `txt` file separately. Like- `backup_files.txt` store file enumeration's results.
