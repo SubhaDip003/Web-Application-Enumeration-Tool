@@ -42,17 +42,8 @@ def find_backup_files(url):
         filename = os.path.basename(urlparse(link).path)
         if any(filename.endswith(ext) for ext in backup_extensions):
             backup_files.append(link)
-            download_file(link, result_dir)
 
     return backup_files
-
-def save_to_file(filename, content):
-    result_dir = "results"
-    if not os.path.exists(result_dir):
-        os.makedirs(result_dir)
-
-    with open(os.path.join(result_dir, filename), 'w') as f:
-        f.write(content)
 
 def main():
     parser = argparse.ArgumentParser(description="Find backup files on a website")
@@ -67,7 +58,15 @@ def main():
     print("Backup files found:", backup_files)
 
     # Save the output to a text file
-    save_to_file("backup_files.txt", "\n".join(backup_files))
+    result_dir = "results"
+    if not os.path.exists(result_dir):
+        os.makedirs(result_dir)
+
+    with open(os.path.join(result_dir, "backup_files.txt"), 'w') as f:
+        for item in backup_files:
+            f.write("%s\n" % item)
+
+    print("Results saved to results/backup_files.txt")
 
 if __name__ == "__main__":
     main()
